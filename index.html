@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic widget</title>
+</head>
+<body>
+  <h1>JavaScript Embed</h1>
+
+  <div id="container"></div>
+
+  <script>
+    window.WIDGET_CONFIG = { selector: "#container" };
+
+    (function(){var script=document.createElement("script");script.type="module";script.src="src/widget.js";document.head.appendChild(script);})();
+  </script>
+</body>
+</html>
